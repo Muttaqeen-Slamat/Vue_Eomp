@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 
-let dataUrl = ''
+let dataUrl = 'https://muttaqeen-slamat.github.io/vue_eomp_data/data/'
 
 export default createStore({
   state: {
@@ -10,7 +10,9 @@ export default createStore({
     testimonials: null,
     projects: null
   },
-  getters: {
+  getters: { 
+  },
+  mutations: {
     setAbout(state,value){
       state.about = value
     },
@@ -26,8 +28,6 @@ export default createStore({
     setProjects(state,value){
       state.projects =value
     }
-  },
-  mutations: {
   },
   actions: {
     async fetchAbout(context){
