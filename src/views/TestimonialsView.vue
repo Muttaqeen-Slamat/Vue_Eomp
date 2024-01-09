@@ -5,42 +5,39 @@
     </div>
   </div>
 
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" v-if="testimonials">
-    <div v-for="testimonials in testimonials" :key="testimonials.name" class="carousel-inner" >
-      <div class="carousel-item active">
-        <img :src="testimonials.profile" class="d-block w-100" :alt="`Image for ${testimonials.name}`">
-        <h2>{{ testimonials.name }}{{ testimonials.surname }}</h2>
-        <p>{{ testimonials.quotes }}</p>
-      </div>
-      <div class="carousel-item">
-        <img src="" class="d-block w-100" alt="..." >
-      </div>
-      <div class="carousel-item">
-        <img src="" class="d-block w-100" alt="..." >
+  <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" v-if="testimonials" style="width: 18rem;">
+    <div v-for="testimonial in testimonials" :key="testimonial.name" class="carousel-inner" >
+      <div :class="{ 'carousel-item': true, 'active': testimonials.indexOf(testimonial) ===0}">
+        <img :src="testimonial.profile" class="d-block w-100" :alt="`Image for ${testimonial.name}`">
+        <h2>{{ testimonial.name }} {{ testimonial.surname }}</h2>
+        <p>{{ testimonial.quotes }}</p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 </template>
 
+
 <script>
 export default {
   computed: {
     testimonials() {
-      return this.$store.state.tesimonials;
+      return this.$store.state.testimonials;
     },
   },
   mounted() {
-    this.$store.dispatch("fetchTesimonials");
+    this.$store.dispatch("fetchTestimonials");
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
