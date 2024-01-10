@@ -5,28 +5,42 @@
         </div>
         <div class="row">
             <div class="col">
-                <h2>Reach me on:</h2>
-                <p>LinkedIn:</p>
-                <a href="https://www.linkedin.com/in/muttaqeen-slamat-95209019b/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <p>Email:</p>
+                <div>
+                    <h2>Reach me on:</h2>
+                </div>
+                <div id="ct">LinkedIn:</div>
+                <a href="https://www.linkedin.com/in/muttaqeen-slamat-95209019b/" target="_blank"><i class="bi bi-linkedin"></i> Take me there</a>
+                <div id="ct">GitHub:</div>
+                <a href="https://github.com/Muttaqeen-Slamat" target="_blank"><i class="bi bi-github"></i> Take me there</a>
+                <div id="ct">Email:</div>
                 <a href="mailto:muttaqeens@gmail.com" target="_blank"><i class="bi bi-envelope"></i> muttaqeens@gmail.com</a>
-                <p>Via Phone:</p>
-                <a href="" target="_blank"><i class="bi bi-telephone"></i> 081 286 7370</a>
+                <div id="ct">Via Phone:</div>
+                <a href="/"><i class="bi bi-telephone"></i> 081 286 7370</a>
             </div>
+
+
             <div class="col">
                 <h2>Submit form</h2>
 
                 <form action="https://formspree.io/f/xpzvzgaj" method="POST">
-                    <label>
-                        Your email:
-                        <input type="email" name="email" placeholder="email@example.com" required>
-                    </label>
-                    <label>
-                         Your message:
-                        <textarea name="message" placeholder="Send Your Message" required></textarea>
-                    </label>
+                    <div>
+                        <label>
+                            Your Email:
+                            <div>
+                                <input class="p-3" type="email" name="email" placeholder="email@example.com" required>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="mt-3 ">
+                        <label>
+                             Your Message:
+                             <div>
+                                 <input class="p-3" name="message" placeholder="Send Your Message" required>
+                             </div>
+                        </label>
+                    </div>
   <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
+                    <button type="submit" class="my-3">Send</button>
                 </form>
             </div>
         </div>
@@ -41,5 +55,18 @@
 </script>
 
 <style scoped>
+
+input{
+    border-radius: 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#ct{
+    margin-top: 20px;
+}
 
 </style>
