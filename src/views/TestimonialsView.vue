@@ -5,10 +5,10 @@
     </div>
   </div>
 
-  <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" v-if="testimonials" style="width: 18rem;">
+  <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" v-if="testimonials" style="">
     <div v-for="testimonial in testimonials" :key="testimonial.name" class="carousel-inner" >
       <div :class="{ 'carousel-item': true, 'active': testimonials.indexOf(testimonial) ===0}">
-        <img :src="testimonial.profile" class="d-block w-100" :alt="`Image for ${testimonial.name}`">
+        <img :src="testimonial.profile" :alt="`Image for ${testimonial.name}`">
         <h2>{{ testimonial.name }} {{ testimonial.surname }}</h2>
         <p>{{ testimonial.quotes }}</p>
       </div>
