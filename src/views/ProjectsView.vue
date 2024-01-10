@@ -4,7 +4,7 @@
         <h2 class="display-2">Projects</h2>
       </div>
   
-      <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly" v-if="projects">
+      <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly pcard" v-if="projects">
         <div v-for="project in projects" :key="project.name" class="card " style="width: 18rem;">
           <img :src="project.image" class="card-img-top" :alt="`Image for ${project.name}`">
           <div class="card-body">
@@ -77,6 +77,10 @@
   
   a:active {
     transform: scale(0.9);
+  }
+
+  .pcard{
+    gap: 40px;
   }
   </style>
   
