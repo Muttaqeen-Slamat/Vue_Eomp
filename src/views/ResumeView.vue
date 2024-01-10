@@ -3,7 +3,7 @@
     <div class="row">
       <h2 class="display-2">Resume</h2>
     </div>
-    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly" v-if="education">
+    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly mb-5" v-if="education">
         <div v-for="education in education" :key="education.id" class="card " style="width: 18rem;">
           <img :src="education.logo" class="card-img-top" :alt="`Image for ${education.place}`">
           <div class="card-body">
@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly" v-if="skills">
+    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard" v-if="skills">
         <div v-for="skills in skills" :key="skills.id" class="card " style="width: 18rem;">
           <img :src="skills.image" class="card-img-top" :alt="`Image for ${skills.title}`">
           <div class="card-body">
@@ -44,4 +44,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.rcard{
+  gap: 40px;
+}
+</style>
