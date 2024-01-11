@@ -69,4 +69,7 @@ a{
     margin-top: 20px;
 }
 
+.container{
+    margin-bottom: 10.1rem;
+}
 </style>
