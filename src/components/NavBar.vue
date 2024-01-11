@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <router-link to="/">
-        <img class="img-fluid" src="https://drive.google.com/uc?id=1gS0tCqUSm6BfTMGknR-XaduG510mc1pS" alt="Logo" loading="lazy">
+        <img class="img-fluid" src="https://i.postimg.cc/zvfDRZbx/Muttaqeen.png" alt="Logo" loading="lazy">
     </router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
