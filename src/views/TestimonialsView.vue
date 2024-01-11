@@ -5,23 +5,16 @@
     </div>
   </div>
 
-  <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" v-if="testimonials" style="">
-    <div v-for="testimonial in testimonials" :key="testimonial.name" class="carousel-inner" >
-      <div :class="{ 'carousel-item': true, 'active': testimonials.indexOf(testimonial) ===0}">
-        <img :src="testimonial.profile" :alt="`Image for ${testimonial.name}`">
-        <h2>{{ testimonial.name }} {{ testimonial.surname }}</h2>
-        <p>{{ testimonial.quotes }}</p>
+  <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard" v-if="testimonials">
+        <div v-for="testimonial in testimonials" :key="testimonial.name" class="card " style="width: 18rem;">
+          <img :src="testimonial.profile" class="card-img-top" :alt="`Image for ${testimonial.name}`">
+          <div class="card-body">
+            <h5 class="card-title">{{ testimonial.name }} {{ testimonial.surname }}</h5>
+            <p class="card-text">{{ testimonial.quotes }}</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+
 </template>
 
 
