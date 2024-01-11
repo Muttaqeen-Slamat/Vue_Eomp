@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="row">
-        <h2 class="display-2">Projects</h2>
+        <h1>Projects</h1>
       </div>
   
       <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly pcard" v-if="projects">

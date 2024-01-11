@@ -1,12 +1,12 @@
 <template>
     <div class="container ">
         <div class="row">
-            <h2 class="display-2">Contact</h2>
+            <h1>Contact</h1>
         </div>
         <div class="row">
             <div class="col">
                 <div>
-                    <h2>Reach me on:</h2>
+                    <h2 class="text-decoration-underline">Reach me on:</h2>
                 </div>
                 <div id="ct">LinkedIn:</div>
                 <a href="https://www.linkedin.com/in/muttaqeen-slamat-95209019b/" target="_blank"><i class="bi bi-linkedin"></i> Take me there</a>
@@ -20,7 +20,7 @@
 
 
             <div class="col">
-                <h2>Submit form</h2>
+                <h2 class="text-decoration-underline">Submit form</h2>
 
                 <form action="https://formspree.io/f/xpzvzgaj" method="POST">
                     <div>
