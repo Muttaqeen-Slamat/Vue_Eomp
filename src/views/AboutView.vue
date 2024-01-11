@@ -1,8 +1,16 @@
 <template>
   <div class="container">
     <div class="row">
-      <h1>This is an about page</h1>
+      <h1>About Me</h1>
 
+    </div>
+    <div class="row mb-5">
+      <div class="col">
+        <img src="https://i.postimg.cc/NMDmG7TR/Untitled-1.png" alt="icons">
+      </div>
+      <div class="col">
+        <img src="https://i.postimg.cc/yYvspTWR/20231009-111117-removebg-preview.png" alt="Me">
+      </div>
     </div>
     <div class="row" v-if="about">
       <p class="lead" v-for="title in about" :key="title">
@@ -28,3 +36,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+img{
+  width: 15rem;
+}
+</style>
