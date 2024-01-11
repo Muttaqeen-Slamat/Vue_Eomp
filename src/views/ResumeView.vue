@@ -1,7 +1,10 @@
 <template>
   <div class="container">
-    <div class="row">
-      <h2 class="display-2">Resume</h2>
+    <div class="mb-3">
+      <h1>Resume</h1>
+    </div>
+    <div>
+      <h2 class="text-decoration-underline">Education</h2>
     </div>
     <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly mb-5" v-if="education">
         <div v-for="education in education" :key="education.id" class="card " style="width: 18rem;">
@@ -12,6 +15,9 @@
             
           </div>
         </div>
+      </div>
+      <div class="mb -3">
+        <h2 class="text-decoration-underline">Skills</h2>
       </div>
     <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard" v-if="skills">
         <div v-for="skills in skills" :key="skills.id" class="card " style="width: 18rem;">
