@@ -31,29 +31,54 @@ export default createStore({
   },
   actions: {
     async fetchAbout(context){
-      let res = await fetch(dataUrl)
-      let {about} = await res.json()
-      context.commit('setAbout', about)
+      try{
+        let res = await fetch(dataUrl)
+        let {about} = await res.json()
+        context.commit('setAbout', about)
+      }
+      catch(error){
+        console.error('Error fetching about data:', error.message);
+      }
     },
     async fetchEducation(context){
-      let res = await fetch(dataUrl)
-      let {education} = await res.json()
-      context.commit('setEducation', education)
+      try{
+        let res = await fetch(dataUrl)
+        let {education} = await res.json()
+        context.commit('setEducation', education)
+      }
+      catch(error){
+        console.error('Error fetching education data:', error.message);
+      }
     },
     async fetchSkills(context){
-      let res = await fetch(dataUrl)
-      let {skills} = await res.json()
-      context.commit('setSkills', skills)
+      try{
+        let res = await fetch(dataUrl)
+        let {skills} = await res.json()
+        context.commit('setSkills', skills)
+      }
+      catch(error){
+        console.error('Error fetching skills data:', error.message);
+      }
     },
     async fetchTestimonials(context){
-      let res = await fetch(dataUrl)
-      let {testimonials} = await res.json()
-      context.commit('setTestimonials', testimonials)
+      try{
+        let res = await fetch(dataUrl)
+        let {testimonials} = await res.json()
+        context.commit('setTestimonials', testimonials)
+      }
+      catch(error){
+        console.error('Error fetching testimonials data:', error.message);
+      }
     },
     async fetchProjects(context){
-      let res = await fetch(dataUrl)
-      let {projects} = await res.json()
-      context.commit('setProjects', projects)
+      try{
+        let res = await fetch(dataUrl)
+        let {projects} = await res.json()
+        context.commit('setProjects', projects)
+      }
+      catch(error){
+        console.error('Error fetching projects data:', error.message);
+      }
     }
   },
   modules: {
