@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-fluid footer">
         <div class="row">
             <p class="lead">
                 Muttaqeen's Portfolio &copy;
@@ -22,5 +22,9 @@
 </script>
 
 <style scoped>
+
+.footer{
+    background-color: aquamarine;
+}
 
 </style>
