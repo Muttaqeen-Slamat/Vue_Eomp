@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row mt-3">
       <h1 >Testimonials</h1>
     </div>
   </div>
 
-  <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard" v-if="testimonials">
+  <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard mt-5 mb-5" v-if="testimonials">
         <div v-for="testimonial in testimonials" :key="testimonial.id" class="card " style="width: 18rem;">
           <img :src="testimonial.profile" class="card-img-top" :alt="`Image for ${testimonial.name}`">
           <div class="card-body">
