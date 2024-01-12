@@ -1,25 +1,26 @@
 <template>
   <div class="container">
-    <div class="mb-3">
+    <div class="mb-3 mt-3">
       <h1>Resume</h1>
     </div>
     <div>
       <h2 class="text-decoration-underline">Education</h2>
     </div>
-    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly mb-5" v-if="education">
+    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly mt-5 mb-5" v-if="education">
         <div v-for="education in education" :key="education.id" class="card " style="width: 18rem;">
           <img :src="education.logo" class="card-img-top" :alt="`Image for ${education.place}`">
           <div class="card-body">
             <h5 class="card-title">{{ education.place }}</h5>
+            <p>{{ education.year }}</p>
             <p class="card-text">{{ education.description }}</p>
             
           </div>
         </div>
       </div>
-      <div class="mb -3">
+      <div class="mb-3">
         <h2 class="text-decoration-underline">Skills</h2>
       </div>
-    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard" v-if="skills">
+    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard mt-5 mb-5" v-if="skills">
         <div v-for="skills in skills" :key="skills.id" class="card " style="width: 18rem;">
           <img :src="skills.image" class="card-img-top" :alt="`Image for ${skills.title}`">
           <div class="card-body">
