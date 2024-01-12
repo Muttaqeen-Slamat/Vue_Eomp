@@ -1,10 +1,16 @@
 <template>
     <div class="container">
-      <div class="row mt-3">
+      <div class="spinner-container" v-if="loading">
+      <Spinner/>
+      <div class="spinner-grow" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+      <div class="row mt-3" v-else>
         <h1>Projects</h1>
       </div>
   
-      <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly pcard mt-5 mb-5" v-if="projects">
+      <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly pcard mt-5 mb-5" v-if="projects && !loading">
         <div v-for="project in projects" :key="project.id" class="card " style="width: 18rem;">
           <img :src="project.image" class="card-img-top" :alt="`Image for ${project.name}`">
           <div class="card-body">
@@ -19,7 +25,14 @@
   </template>
   
   <script>
+  import Spinner from '@/components/Spinner.vue';
+
   export default {
+    data() {
+    return {
+      loading: true,
+    };
+  },
     computed: {
       projects() {
         return this.$store.state.projects;
@@ -27,11 +40,26 @@
     },
     mounted() {
       this.$store.dispatch('fetchProjects');
-    }
-  }
+      const delay = 1000;
+
+setTimeout(() => {
+  this.loading = false;
+}, delay);
+},
+components: { Spinner }
+}
+    
+  
   </script>
   
   <style scoped>
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
   a {
     font-size: 18px;
     letter-spacing: 2px;
