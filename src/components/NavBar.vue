@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top">
   <div class="container-fluid">
     <router-link to="/">
         <img class="img-fluid" src="https://i.postimg.cc/zvfDRZbx/Muttaqeen.png" alt="Logo" loading="lazy">

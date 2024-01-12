@@ -25,10 +25,14 @@ export default {
 <style scoped>
 
 .container{
-    margin-top: 23vh;
-    margin-bottom: 30vh;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .text span{
+
     animation: zoomup 2s linear infinite;
     animation-delay: calc(200ms * var(--i));
 }
