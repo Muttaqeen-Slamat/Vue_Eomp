@@ -24,7 +24,7 @@
 <style scoped>
 
 .footer{
-    background-color: aquamarine;
+    background-color: #E4E2DD;
 }
 
 </style>
