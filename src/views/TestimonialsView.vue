@@ -32,5 +32,7 @@ export default {
 </script>
 
 <style scoped>
-
+.rcard{
+  gap: 40px;
+}
 </style>
