@@ -40,11 +40,11 @@ export default {
 @keyframes zoomup {
     0%,
     100% {
-        color: #637074;
+        color: #E4E2DD;
         filter: blur(1px);
         text-shadow: 0 0 10px #637074,
-         0 0 20px #637074,
-         0 0 30px #637074,
+         0 0 20px #E4E2DD,
+         0 0 30px #E4E2DD,
          0 0 40px #637074,
          0 0 60px #637074,
          0 0 80px #637074,
