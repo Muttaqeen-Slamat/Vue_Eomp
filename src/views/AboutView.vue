@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row mt-3">
       <h1>About Me</h1>
 
     </div>

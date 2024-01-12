@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-      <div class="row">
+      <div class="row mt-3">
         <h1>Contact</h1>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col mt-5">
           <div>
             <h2 class="text-decoration-underline">Reach me on:</h2>
           </div>
@@ -18,8 +18,8 @@
           <a href="/"><i class="bi bi-telephone"></i> 081 286 7370</a>
         </div>
   
-        <div class="col">
-          <h2 class="text-decoration-underline">Submit form</h2>
+        <div class="col mt-5">
+          <h2 class="text-decoration-underline mb-3">Submit form</h2>
   
           <form @submit.prevent="submitForm" action="https://formspree.io/f/xpzvzgaj" method="POST" ref="form">
           <div>
