@@ -5,7 +5,7 @@
       </div>
   
       <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly pcard" v-if="projects">
-        <div v-for="project in projects" :key="project.name" class="card " style="width: 18rem;">
+        <div v-for="project in projects" :key="project.id" class="card " style="width: 18rem;">
           <img :src="project.image" class="card-img-top" :alt="`Image for ${project.name}`">
           <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
