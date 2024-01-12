@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="spinner-container" v-if="loading">
-      <Spinner/>
+      <Spinner />
       <div class="spinner-grow" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
@@ -12,36 +12,51 @@
     <div>
       <h2 class="text-decoration-underline">Education</h2>
     </div>
-    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly mt-5 mb-5" v-if="education && !loading">
-        <div v-for="education in education" :key="education.id" class="card " style="width: 18rem;">
-          <img :src="education.logo" class="card-img-top" :alt="`Image for ${education.place}`">
-          <div class="card-body">
-            <h5 class="card-title">{{ education.place }}</h5>
-            <p>{{ education.year }}</p>
-            <p class="card-text">{{ education.description }}</p>
-            
-          </div>
+    <div
+      class="card-deck d-flex flex-row flex-wrap justify-content-evenly mt-5 mb-5"
+      v-if="education && !loading">
+      <div
+        v-for="education in education"
+        :key="education.id"
+        class="card"
+        style="width: 18rem">
+        <img
+          :src="education.logo"
+          class="card-img-top"
+          :alt="`Image for ${education.place}`"/>
+        <div class="card-body">
+          <h5 class="card-title">{{ education.place }}</h5>
+          <p>{{ education.year }}</p>
+          <p class="card-text">{{ education.description }}</p>
         </div>
       </div>
-      <div class="mb-3">
-        <h2 class="text-decoration-underline">Skills</h2>
-      </div>
-    <div class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard mt-5 mb-5" v-if="skills && !loading">
-        <div v-for="skills in skills" :key="skills.id" class="card " style="width: 18rem;">
-          <img :src="skills.image" class="card-img-top" :alt="`Image for ${skills.title}`">
-          <div class="card-body">
-            <h5 class="card-title">{{ skills.title }}</h5>
-            <p class="card-text">{{ skills.experience }}</p>
-            
-          </div>
+    </div>
+    <div class="mb-3">
+      <h2 class="text-decoration-underline">Skills</h2>
+    </div>
+    <div
+      class="card-deck d-flex flex-row flex-wrap justify-content-evenly rcard mt-5 mb-5"
+      v-if="skills && !loading">
+      <div
+        v-for="skills in skills"
+        :key="skills.id"
+        class="card"
+        style="width: 18rem">
+        <img
+          :src="skills.image"
+          class="card-img-top"
+          :alt="`Image for ${skills.title}`"/>
+        <div class="card-body">
+          <h5 class="card-title">{{ skills.title }}</h5>
+          <p class="card-text">{{ skills.experience }}</p>
         </div>
       </div>
+    </div>
   </div>
 </template>
 
-
 <script>
-import Spinner from '@/components/Spinner.vue';
+import Spinner from "@/components/Spinner.vue";
 export default {
   data() {
     return {
@@ -57,15 +72,15 @@ export default {
     },
   },
   mounted() {
-    this.$store.dispatch("fetchEducation",);
-    this.$store.dispatch("fetchSkills",);
+    this.$store.dispatch("fetchEducation");
+    this.$store.dispatch("fetchSkills");
     const delay = 1000;
 
-setTimeout(() => {
-  this.loading = false;
-}, delay);
+    setTimeout(() => {
+      this.loading = false;
+    }, delay);
   },
-  components: { Spinner }
+  components: { Spinner },
 };
 </script>
 
@@ -76,7 +91,7 @@ setTimeout(() => {
   align-items: center;
   height: 100vh;
 }
-.rcard{
+.rcard {
   gap: 40px;
 }
 </style>
