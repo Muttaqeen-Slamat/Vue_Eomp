@@ -21,6 +21,7 @@
         class="card"
         style="width: 18rem">
         <img
+          style="height:16rem; aspect-ratio: 1/1;"
           :src="education.logo"
           class="card-img-top"
           :alt="`Image for ${education.place}`"/>
@@ -43,6 +44,7 @@
         class="card"
         style="width: 18rem">
         <img
+          style="height: 14rem;"
           :src="skills.image"
           class="card-img-top"
           :alt="`Image for ${skills.title}`"/>
