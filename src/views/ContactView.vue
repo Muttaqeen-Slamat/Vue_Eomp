@@ -18,6 +18,8 @@
         <a href="mailto:muttaqeens@gmail.com" target="_blank"><i class="bi bi-envelope"></i> muttaqeens@gmail.com</a>
         <div id="ct">Via Phone:</div>
         <p href="/"><i class="bi bi-telephone"></i> 081 286 7370</p>
+        <div id="ct">Location:</div>
+        <p href="/"><i class="bi bi-geo-alt"></i>Cape Town, Athlone</p>
       </div>
 
       <div class="col mt-5">

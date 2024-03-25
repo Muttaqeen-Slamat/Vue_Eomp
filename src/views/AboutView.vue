@@ -11,11 +11,12 @@
     </div>
     <div class="row mb-5" v-if="!loading">
       <div class="col">
-        <img src="https://i.postimg.cc/NMDmG7TR/Untitled-1.png" alt="icons" />
+        <img style="padding-top: 12px;" src="https://i.postimg.cc/NMDmG7TR/Untitled-1.png" alt="icons" />
       </div>
       <div class="col">
         <img
-          src="https://i.postimg.cc/yYvspTWR/20231009-111117-removebg-preview.png"
+          style="border-radius: 25px;"
+          src="https://i.postimg.cc/wMC0hSFH/Mutta-croped.jpg"
           alt="Me"/>
       </div>
     </div>
