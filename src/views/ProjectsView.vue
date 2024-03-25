@@ -19,6 +19,7 @@
         class="card"
         style="width: 18rem">
         <img
+          style="height: 10rem;"
           :src="project.image"
           class="card-img-top"
           :alt="`Image for ${project.name}`"/>
