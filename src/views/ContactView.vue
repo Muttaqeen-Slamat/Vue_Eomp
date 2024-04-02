@@ -101,5 +101,6 @@ a {
 
 .container {
   margin-bottom: 10.1rem;
+  height: 70vh;
 }
 </style>
