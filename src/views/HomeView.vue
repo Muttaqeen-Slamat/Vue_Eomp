@@ -5,6 +5,7 @@
         <span style="--i: 1">Muttaqeen</span> <span style="--i: 2">Slamat</span>
       </h1>
       <h3><span style="--i: 3">An Aspiring Web Developer</span></h3>
+      <p>hi</p>
     </div>
   </div>
 </template>
@@ -12,12 +13,17 @@
 <script>
 
 export default {
-  components: {},
+  components: {
+
+  },
 };
 </script>
 
 <style scoped>
 .container {
+
+  
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
