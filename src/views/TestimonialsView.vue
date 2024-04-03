@@ -2,9 +2,6 @@
   <div class="container">
     <div class="spinner-container" v-if="loading">
       <Spinner />
-      <div class="spinner-grow" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
     </div>
     <div class="row mt-3" v-else>
       <h1>Testimonials</h1>
